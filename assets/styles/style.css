@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&family=Courgette&family=Edu+NSW+ACT+Foundation&family=Ibarra+Real+Nova&family=M+PLUS+1+Code:wght@300&family=Oswald:wght@300;400&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-decoration: none;
- 
 }
 
-h1, h2, h3, h4, h5, h6, span, a{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Oswald', sans-serif;
 }
 
 p{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .wrapper{
@@ -22,308 +21,415 @@ p{
     margin: auto;
 }
 
-/* -- header area -- */
+/* Header Area */
 
 .nav{
-    display: inline;
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+
+.nav h1{
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a{
+    color: #96746B;
+    text-decoration: none;
+}
+
+.nav ul{
+    width: 50%;
+    text-align: right;
+    padding-top: 1em;
+    float: left;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #312A26;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Banner Area */
+
+.banner{
+    background-image: url('../images/test.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    width: 45%;
+    transform: translateY(-50%);
+}
+
+.banner-text h2{
+    color: #C7A17A;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.banner-text h2 span{
+    color: #96746B;
+}
+
+.banner-text p{
+    color: white;
+}
+
+.banner-text a{
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    background-color: #312A26;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+/* Ads Area */
+.ads{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.ads-item1{
+    background-image: url('../images/ads-img1.jpg');
+    margin-right: 3%;
+}
+
+.ads-item2{
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(15%);
+    width: 40%;
+}
+
+.ads-text h3{
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312A26;
+}
+
+.ads-text a{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 5px #312A26;
+}
+
+/* Merchandise */
+.merch{
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header span{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #C7A17A;
+}
+
+.section-header h2{
+    text-transform: uppercase;
+    color: #312A26;
+}
+
+.section-header hr{
+    width: 25%;
+    height: 2px;
+    margin: auto;
+    background-color: #C7A17A;
+}
+
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items:nth-child(4), .merch-items:nth-child(8){
+    margin-right: 0;}
+
+.merch-items img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Discount Area */
+.discount{
+    width: 85%;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+
+.discount-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.discount-text span{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312A26;
+}
+
+.discount-text h2{
+    color: white;   
+    text-shadow: 3px 3px 6px #312A26;
+    font-size: 2em;
+}
+
+.discount-text a{
+    padding: 1em;
+    text-decoration: none;
+    margin-top: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #312A26;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* Ads Area 2 */
+
+.ads-item3{
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 3%;
+}
+.ads-item4{
+    background-image: url('../images/ads-img4.jpg');
+}
+.ads-item5{
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 3%;
+}
+.ads-item6{
+    background-image: url('../images/ads-img6.jpg');
+}
+
+
+/* form are */
+.form-item{
+    float: left;
+    margin-top: 2em;
+    padding: 1em;
+    text-transform: capitalize;
+    height: 625px;
+    margin-bottom: 3%;
+}
+.form-item p{
+    margin: 1em 2.5% 0.5em 2.5%;
+    font-weight: bold;
+}
+
+.form-item h2,h3,h4 {
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 450;
+}
+.form-item h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form-item span{
+    font-weight: bold;
+    text-transform: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-item1{
+   width: 49.5%;
+   background-color: rgb(226, 224, 224);
+   margin-right: 1%;
+}
+.form-item2{
+    width: 48.5%;
+    background-color: rgb(226, 224, 224);
+
     
 }
 
-
-span{
-    color: #C7A17A;
-
-}
-.title{
-    margin: 20px 40px;
-    font-size: 30px;
-    position: relative;
-    left: 50px;
-    top: 15px;
-    font-weight: bold;
-}
-.title a{
-    color: #96746B;
-}
-.unorder-lists{
-    position: relative;
-    right: 50px;
-    top: -20px;
-    float: right;
-    display: flex;  
-    list-style-type: none;
-
-}
-.unorder-lists li{
-    margin: 5px;
-    justify-content: flex-end;
-    text-decoration: none;
-   
-}
-.unorder-lists a{
-    color: #312A26;
-    font-family: normal;
+input{
+    margin: auto 2.5%;
+    width: 95%;
+    height: 3em;
+    vertical-align: middle;
+    padding: 1em;
 }
 
-/* -- banner area -- */
-.banner{
-    margin-top: 30px;
-    width: 100%;
-    height: 600px;
-    background-image: url('../images/test.jpg');
-    background-size: cover;
-}
-
-.relative{
-    width: 45%;
-    height: 100%;
-    position: relative;
-}
-
-h2{
-    font-size: 50px;
-}
-p{
-    font-size: 15px;
-    color: white;
-    font-weight: lighter;
-    margin-bottom: 20px;
-    margin-top: 0px;
-}
-
-.absolute{
-    color: #96746B;
-    position: absolute;
-    top: 40%;
-    left: 100px;
-}
-
-.subtitle{
-    font-weight: 900;
-
-}
-.subtitle p{
-    font-family: Raleway, sans-serif;
-}
-
-.button{
-    margin-top: 30px;
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-    background-color: #312A26;
-}
-
-/* ads area */
-.ads{
-    display: flex;
-    margin-top: 30px;
-    height: 500px;
-  
-}
-
-h3{
-    margin-bottom: 10px;
-}
-
-
-.first{
-    position: relative;
-    margin-left: 10%;
-    width: 50%;
-    height: 85%;
-    margin-right: 1%;
-    background-image: url('../images/ads-img1.jpg');
-    background-size: cover;
-    background-position: center;
- 
-}
-
-
-
-.absolute2{
-    text-transform: uppercase;
-    position: absolute;
-    left: 20%;
-    top: 40%;
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 2px black;
-} 
-
-.absolute2 a{
-    color: white;
-    font-size: 15px;
-
-}
-
-.second{
-    position: relative;
-    margin-right: 10%;
-    width: 50%;
-    margin-left: 1%;
-    height: 85%;
-    background-image: url('../images/ads-img2.jpg');
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.absolute3{
-    text-transform: uppercase;
-    position: absolute;
-    left: 20%;
-    top: 40%;
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 2px black;
-} 
-.absolute3 a{
-    color: white;
-    font-size: 15px;
-
-}
-
-/* images area */
-.merchandise{
+.time{
+    width: auto;
+    margin: auto;
     text-align: center;
-    height:600px;
-    width: 100%;
- 
-  
 }
-.merchandise h4{
-    text-transform: uppercase;
+.time input{
+    width: 1em;
+}
+textarea{
+    width: 95%;
+    margin: auto 2.5%;
 }
 
-hr {
-    height: 2px;
-    width: 50%; 
-    margin: 0 25% 0 25%;
+.form-item2 img{
+    margin:auto 37.5%;
+    width: 25%;
+    height: 30px;
+}
+.agreement input{
+    width: auto;
+    margin-right: 1em; 
+
+}
+.send{
     background-color: #C7A17A;
 }
 
-
-
-.merchandise p{
-    font-style:italic ;
-    color: #C7A17A;
-    margin-bottom: 0;
-}
-.contents-item{
-    height: 400px;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-   
-   
-
-   
-}
-.contents-item h4{
-   text-align: left;
-   margin-left: 10px;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.contents-item img{
+/* footer area */
+.footer{
     width: 100%;
-    height: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
- 
+    height: auto;
+    background-image: url('../images/footer-img.jpg');
+    background-size: cover;
+    background-position: center;
+    float: left;
+    color: white;
 }
+.footer-item{
+    width:85% ;
+    margin:auto 7.5% ;
+    float: left;
 
-
-.contents-item p{
-    margin-left: 10px;
+}
+.foot-item{
+    width: 24%;
+    height: 100%;
+    float: left;
+    padding: 1em;
+}
+.foot-item h3{
     text-align: left;
-    font-size: 0.5em;
-}
-.contents-item1{
-    width: 100%;
-    height: 60%;
-    margin: auto;
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.contents-item2{
-    width: 100%;
-    height: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.price{
-    font-family: 'Edu NSW ACT Foundation', cursive;
-}
-
-/* discount area */
-.discount{
-    width: 80%;
-    height: 300px;
-    margin:80px auto 20px;
-    background-image: url('../images/discount-img.jpg');
-    background-size: cover;
-    background-position: 0% 50%;
-    position: relative;
-}
-.discount-text{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    color: white;
-    text-align: center;
-
-}
-.discount-text p{
-    margin: 0;
-    font-style: italic;
-    font-size: 0.7em;
-}
-.discount-text h3{
     text-transform: uppercase;
-    text-shadow: 3px 3px 3px black;
-    padding-bottom: 10px;
-    font-size: 1.5em;
-}
-.discount-text a{
-    padding: 10px;
-    text-decoration: none;
-    color: #312A26;
-    background-color: aliceblue;
+
 }
 
-/* on-sale area */
-.sale-text{
-
-    text-align: center;
-    height:600px;
-    width: 100%;
- 
-  
+.foot-item li{
+    list-style: none;
 }
-.sale-text h4{
+.foot-item span{
+    color: #C7A17A;
+    font-size: 0.75em;
+}
+
+.footer-item1{
+    
+}
+.footer-item2{
+    
+}
+.footer-item3{
+
+}
+.footer-item3 input[type="search"]{
+    height: 2em;
+    width: 65%;
+    margin-right: 2%;
     text-transform: uppercase;
+    float: left;
 }
-
-hr {
-    height: 2px;
-    width: 50%; 
-    margin: 0 25% 0 25%;
+.footer-item3 input[type="submit"]{
+    height: 2em;
+    width: 25%;
+    float: left;
+    padding: 2px;
+    color: black;
     background-color: #C7A17A;
 }
+.footer-item4{
 
-.sale-photo{
+}
 
+
+
+/* other are */
+.other {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    float: left;
+
+}
+.other-items {
+    width: 31%;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 0.75em
+}
+.other-item h4{
+    margin: 0.75em;
+}
+
+.other-items img {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
 }
