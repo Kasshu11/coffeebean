@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&family=Courgette&family=Edu+NSW+ACT+Foundation&family=Ibarra+Real+Nova&family=M+PLUS+1+Code:wght@300&family=Oswald:wght@300;400&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&family=Yellowtail&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+ 
+}
+
+h1, h2, h3, h4, h5, h6, span, a{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+/* -- header area -- */
+
+.nav{
+    display: inline;
+    
+}
+
+
+span{
+    color: #C7A17A;
+
+}
+.title{
+    margin: 20px 40px;
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+    top: 15px;
+    font-weight: bold;
+}
+.title a{
+    color: #96746B;
+}
+.unorder-lists{
+    position: relative;
+    right: 50px;
+    top: -20px;
+    float: right;
+    display: flex;  
+    list-style-type: none;
+
+}
+.unorder-lists li{
+    margin: 5px;
+    justify-content: flex-end;
+    text-decoration: none;
+   
+}
+.unorder-lists a{
+    color: #312A26;
+    font-family: normal;
+}
+
+/* -- banner area -- */
+.banner{
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/test.jpg');
+    background-size: cover;
+}
+
+.relative{
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+h2{
+    font-size: 50px;
+}
+p{
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.absolute{
+    color: #96746B;
+    position: absolute;
+    top: 40%;
+    left: 100px;
+}
+
+.subtitle{
+    font-weight: 900;
+
+}
+.subtitle p{
+    font-family: Raleway, sans-serif;
+}
+
+.button{
+    margin-top: 30px;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #312A26;
+}
+
+/* ads area */
+.ads{
+    display: flex;
+    margin-top: 30px;
+    height: 500px;
+  
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+
+.first{
+    position: relative;
+    margin-left: 10%;
+    width: 50%;
+    height: 85%;
+    margin-right: 1%;
+    background-image: url('../images/ads-img1.jpg');
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+
+
+.absolute2{
+    text-transform: uppercase;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+} 
+
+.absolute2 a{
+    color: white;
+    font-size: 15px;
+
+}
+
+.second{
+    position: relative;
+    margin-right: 10%;
+    width: 50%;
+    margin-left: 1%;
+    height: 85%;
+    background-image: url('../images/ads-img2.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.absolute3{
+    text-transform: uppercase;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+} 
+.absolute3 a{
+    color: white;
+    font-size: 15px;
+
+}
+
+/* images area */
+.merchandise{
+    text-align: center;
+    height:600px;
+    width: 100%;
+ 
+  
+}
+.merchandise h4{
+    text-transform: uppercase;
+}
+
+hr {
+    height: 2px;
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    background-color: #C7A17A;
+}
+
+
+
+.merchandise p{
+    font-style:italic ;
+    color: #C7A17A;
+    margin-bottom: 0;
+}
+.contents-item{
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+   
+   
+
+   
+}
+.contents-item h4{
+   text-align: left;
+   margin-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contents-item img{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+ 
+}
+
+
+.contents-item p{
+    margin-left: 10px;
+    text-align: left;
+    font-size: 0.5em;
+}
+.contents-item1{
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contents-item2{
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.price{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+/* discount area */
+.discount{
+    width: 80%;
+    height: 300px;
+    margin:80px auto 20px;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: 0% 50%;
+    position: relative;
+}
+.discount-text{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: white;
+    text-align: center;
+
+}
+.discount-text p{
+    margin: 0;
+    font-style: italic;
+    font-size: 0.7em;
+}
+.discount-text h3{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+.discount-text a{
+    padding: 10px;
+    text-decoration: none;
+    color: #312A26;
+    background-color: aliceblue;
+}
+
+/* on-sale area */
+.sale-text{
+
+    text-align: center;
+    height:600px;
+    width: 100%;
+ 
+  
+}
+.sale-text h4{
+    text-transform: uppercase;
+}
+
+hr {
+    height: 2px;
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    background-color: #C7A17A;
+}
+
+.sale-photo{
+
+}
